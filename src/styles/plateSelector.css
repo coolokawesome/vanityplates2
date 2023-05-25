@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Product';
+    src: url('./fonts/Product\ Sans\ Regular.ttf');
+  }
+.plate-input {
+    font-family: 'Product';
+    width: 100%;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: xx-large;
+    text-decoration: none;
+}
+.input-row {
+    background-color: rgb(235, 235, 235);
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 20px
+}
+.radio-row {
+    background-color: rgb(235, 235, 235);
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 20px
+}
