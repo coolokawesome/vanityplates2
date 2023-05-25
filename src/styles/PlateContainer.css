@@ -6,7 +6,10 @@
     width: 100%;
 }
 .plate-container {
-    position: relative
+    position: relative;
+    background-color: rgb(235, 235, 235);
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 20px
 }
 .plate-text {
     width: 100%;
@@ -14,7 +17,7 @@
     text-align: center;
     top: -31%;
     font-family: 'Driver';
-    font-size: 10rem;
+    font-size: 10em
 }
 .text-white {
     color: white
@@ -30,4 +33,12 @@
 }
 .text-black {
     color: black
+}
+.download-img-button {
+    transition-duration: 0.2s;
+}
+.download-img-button:hover {
+    transform: translateY(2px);
+    transition-duration: 0.2s;
+    cursor: pointer;
 }

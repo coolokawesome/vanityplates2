@@ -30,7 +30,25 @@ function PlateSelector() {
           </div>
         </div>
       <div className='row radio-row m-3 p-2'>
-        <div className='col-12'>
+        <p className='text-center'>Plate Selector:</p>
+      <div className='row d-flex'>
+        {
+          plateImageValue.map(plate => (
+            <div className='col-4 col-md-6 col-lg-4 col-xl-4 p-1'>
+              <div className='row d-flex'>
+                <div className='col-1'>
+                  <input class='input-radio' type={'radio'} name='plate-select' value={`${plate.id}`} onClick={handlePlateChange}></input>
+                </div>
+                <div className='col-9'>
+                  <img className='plate-icon img img-fluid' src={plate.plate}></img>
+                </div>
+              </div>
+            </div>
+            )
+          )
+        }
+      </div>
+        {/* <div className='col-12'>
         <button value={1} onClick={handlePlateChange}>ChangePlate1</button>
         <button value={2} onClick={handlePlateChange}>ChangePlate2</button>
         <button value={3} onClick={handlePlateChange}>ChangePlate3</button>
@@ -44,7 +62,7 @@ function PlateSelector() {
         <button value={11} onClick={handlePlateChange}>ChangePlate2</button>
         <button value={12} onClick={handlePlateChange}>ChangePlate3</button>
         <button value={13} onClick={handlePlateChange}>ChangePlate3</button>
-        </div>
+        </div> */}
       </div>
     </div>
   )

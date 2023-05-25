@@ -23,7 +23,7 @@ useEffect(() => {
 }, [text])
 //handle the text color on plate change 
 const plateColor = () => {
-switch(currentColor){
+switch(currentColor) {
     case 'white':
         return 'plate-text text-white'
     case 'red':
@@ -39,10 +39,17 @@ switch(currentColor){
 
 return (
 <div className='col-12 col-lg-6'>
-    <div className=' plate-container'>
+    <div className='plate-container m-3 p-2'>
+        <div>
         <img className='plate-img img img-fluid' id='plateImg' src={currentPlate}></img>
         {/* {run the text change function on rerender} */}
-        <p className={plateColor()}>{text}</p>
+        <p className={plateColor()}>{text}</p> 
+        </div>
+    </div>
+    <div className='download-row'>
+        <div className='d-flex justify-content-center'>
+            <a className='download-img-button'><i class="fa-xl fa-solid fa-download px-3"></i>Download Image</a>
+        </div>
     </div>   
 </div>
 )}
