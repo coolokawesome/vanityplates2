@@ -47,8 +47,11 @@ return (
         </div>
     </div>
     <div className='download-row'>
-        <div className='d-flex justify-content-center'>
-            <a className='download-img-button'><i class="fa-xl fa-solid fa-download px-3"></i>Download Image</a>
+        <div className='d-flex justify-content-center align-items-end'>
+            <a className='download-img-button'>
+                <i class="fa-solid fa-download px-2"></i>
+                Download Image
+            </a>
         </div>
     </div>   
 </div>

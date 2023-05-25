@@ -15,7 +15,7 @@
     width: 100%;
     position: absolute;
     text-align: center;
-    top: -31%;
+    top: -34%;
     font-family: 'Driver';
     font-size: 10em
 }
@@ -36,6 +36,7 @@
 }
 .download-img-button {
     transition-duration: 0.2s;
+    font-weight: 900;
 }
 .download-img-button:hover {
     transform: translateY(2px);
