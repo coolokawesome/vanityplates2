@@ -14,14 +14,22 @@ useEffect(() => {
     setCurrentPlate(plateImageValue[0].plate)
 }, [])
 
+useEffect(() => {
+    if (text.length > 7) {
+        setText(text.slice(0, 7))
+    }
+}, [text])
+
 
 return (
 
 <>
-<div className=' plate-container col-12 col-lg-6'>
+<div className='col-12 col-lg-6'>
+<div className=' plate-container'>
     <img className='plate-img img img-fluid' id='plateImg' src={currentPlate}></img>
-    <p className='plate-text' >{text}</p>
+    <p className='plate-text'>{text}</p>
 </div>   
+</div>
 </>
 
 )}

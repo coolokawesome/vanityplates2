@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Driver';
+    src: url('./fonts/DriverGothic.ttf');
+}
 .plate-img {
-    width: 100%
+    width: 100%;
+}
+.plate-container {
+    position: relative
+}
+.plate-text {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: blue;
+    top: -31%;
+    font-family: 'Driver';
+    font-size: 10rem;
 }
