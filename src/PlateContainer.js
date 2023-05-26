@@ -3,7 +3,6 @@ import { RecoilState, useRecoilState, useRecoilValue } from 'recoil'
 import { plateImage, currentPlateImage, currentPlateColor, plateText } from './atoms.js'
 import './styles/PlateContainer.css'
 import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
 
 
 function PlateContainer() {

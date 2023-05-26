@@ -4,7 +4,7 @@ import PlateSelector from './PlateSelector'
 import Footer from './Footer'
 function Customizer() {
   return (
-    <div className='container'>
+    <div className=''>
         <div className='row'>
             <PlateContainer />
             <PlateSelector />
