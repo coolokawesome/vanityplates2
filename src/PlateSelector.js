@@ -57,7 +57,7 @@ const id = open ? 'simple-popover' : undefined;
                 horizontal: 'left',
               }}
             >
-              <Typography sx={{ p: 2 }}>Get Started by typing your custom text here. <br></br> Check out all of the other plates available too!</Typography>
+              <Typography sx={{ p: 2 }}>Get Started by typing your custom text here. <br></br> Check out the different plates below!</Typography>
             </Popover>
 
             </div>

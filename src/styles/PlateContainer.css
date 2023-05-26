@@ -30,18 +30,20 @@
     }
 
 .text-blue {
-    background: -webkit-linear-gradient(#455dfc, #230ec3);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(47, 47, 194);
+    text-shadow: 2px 2px 3px black;
 }
 .text-red {
-    color: red
+    color: rgb(174, 13, 13);
+    text-shadow: 2px 2px 3px black;
 }
 .text-green {
-    color: green
+    color: rgb(10, 92, 72);
+    text-shadow: 2px 2px 3px black;
 }
 .text-black {
-    color: black
+    color: rgb(37, 37, 37);
+    text-shadow: 2px 2px 3px black;
 }
 .download-img-button {
     transition-duration: 0.2s;
