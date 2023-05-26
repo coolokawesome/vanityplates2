@@ -11,7 +11,8 @@ function App() {
         <Link className="px-3 py-2 navbar-link">Repo</Link>
         <Link className="px-3 py-2 navbar-link">More Projects</Link>
         <Link className="px-3 py-2 navbar-link">Privacy</Link>
-        <Link className="px-3 py-2 navbar-link"><i class="fa-brands fa-twitter"></i></Link>
+        <a target="_blank" rel="canonical" className="twitter-share-button btn btn-primary" href={`https://twitter.com/intent/tweet?check%20out%20this%20site!%20`}>Tweet</a>
+
       </div>
     </div>
   </nav>
