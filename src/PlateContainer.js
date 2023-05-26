@@ -59,11 +59,11 @@ const generatePDF = () => {
 return (
 <div className='col-12 col-lg-6'>
     <div id='plateContainer' className='plate-container m-3 p-2'>
-        <div>
-        <img className='plate-img img img-fluid' id='plateImg' src={currentPlate}></img>
+       
+        <img  className='plate-img img img-fluid' id='plateImg' src={currentPlate}></img>
         {/* {run the text change function on rerender} */}
         <p className={plateColor()}>{text}</p> 
-        </div>
+       
     </div>
     <div className='download-row m-3'>
         <div className='d-flex justify-content-center align-items-end'>

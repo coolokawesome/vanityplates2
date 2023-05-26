@@ -7,7 +7,7 @@
 }
 .plate-container {
     position: relative;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(255, 255, 255) !important;
     border: solid 1px rgb(255, 255, 255);
     border-radius: 20px
 }
@@ -17,10 +17,45 @@
     text-align: center;
     top: -34%;
     font-family: 'Driver';
-    font-size: 10em;
+    font-size: calc(10em);
     /* text-shadow: black 2px 1px 1px; */
 }
-
+@media only screen and (max-width: 1399px){
+    .plate-text {
+        font-size: 8.5em;
+    }
+}
+@media only screen and (max-width: 1199px){
+    .plate-text {
+        font-size: 7.2em;
+    }
+}
+@media only screen and (max-width: 991px){
+    .plate-text {
+        font-size: 11em;
+    }
+}
+@media only screen and (max-width: 767px){
+    .plate-text {
+        font-size: 8.2em;
+    }
+}
+/* mobile */
+@media only screen and (max-width: 414px){
+    .plate-text {
+        font-size: 6em;
+    }
+}
+@media only screen and (max-width: 390px){
+    .plate-text {
+        font-size: 5.7em;
+    }
+}
+@media only screen and (max-width: 375px){
+    .plate-text {
+        font-size: 5.2em;
+    }
+}
 .text-white {
     /* background: -webkit-linear-gradient(#f2f2f2, #e6e6e6);
     -webkit-background-clip: text;
@@ -53,10 +88,30 @@
     border-radius: 20px
 }
 .download-img-button:hover {
-    transform: translateY(2px);
     transition-duration: 0.2s;
     cursor: pointer;
+    background-color: rgb(233, 233, 233);
 }
-.download-row {
+.download-img-button:hover .fa-download {
+    animation: download-icon 3s infinite
+}
+@keyframes download-icon {
+    0%, 100% {
+        transform: translate(0px);
+    }
+    10% {
+        transform: translateY(-2px);
+    }
     
+    20% {
+        transform: translateY(0px);
+    }
+    
+    30% {
+        transform: translateY(-2px);
+    }
+    
+    40% {
+        transform: translateY(0px);
+    }
 }

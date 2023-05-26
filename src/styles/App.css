@@ -8,7 +8,10 @@
   font-family: 'Product';
   src: url('./fonts/Product\ Sans\ Regular.ttf');
 }
-
+body {
+  width: 100% ;
+  overflow-x: hidden !important
+}
 #root {
   font-family: 'Product';
 }
@@ -33,5 +36,5 @@
   background-color: #312d2d;
   color: white;
   border: 3px solid #312d2d;
-  border-radius: 20px;
+  border-radius: 15px;
 }
