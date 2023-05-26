@@ -2,12 +2,16 @@ import React, {useState, useEffect} from 'react'
 import { useRecoilState, useRecoilValue } from 'recoil'
 import { plateImage, currentPlateImage, currentPlateColor, plateText } from './atoms.js'
 import './styles/plateSelector.css'
+import { Popover } from '@mui/material'
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 function PlateSelector() {
     const plateImageValue = useRecoilValue(plateImage)
     const [currentPlate, setCurrentPlate] = useRecoilState(currentPlateImage)
     const [currentColor, setCurrentColor] = useRecoilState(currentPlateColor)
     const [text, setPlateText] = useRecoilState(plateText)
+    const [anchorEl, setAnchorEl] = useState(null);
 
     const handlePlateChange = (e) => {
     let id = e.target.value - 1
@@ -21,12 +25,42 @@ function PlateSelector() {
     setPlateText(e.target.value)
 }
 
+
+const handleClick = (event) => {
+  setAnchorEl(event.currentTarget);
+};
+
+const handleClose = () => {
+  setAnchorEl(null);
+};
+
+const open = Boolean(anchorEl);
+const id = open ? 'simple-popover' : undefined;
+
   return (
     <div className='col-12 col-lg-6'>
         <div className='row input-row m-3 p-2'>
           <div className='col-12'>
             <p className='text-center'>Your custom text:</p>
+            <div className='d-flex justify-content-center align-items-center'>
             <input className='plate-input' spellcheck="false" onChange={handlePlateText}></input>
+            <a aria-describedby={id} variant="contained" className='popover-i' onClick={handleClick}>
+              <i class=" fa-xl fa-solid fa-circle-info px-3"></i>
+            </a>
+              <Popover
+              id={id}
+              open={open}
+              anchorEl={anchorEl}
+              onClose={handleClose}
+              anchorOrigin={{
+                vertical: 'bottom',
+                horizontal: 'left',
+              }}
+            >
+              <Typography sx={{ p: 2 }}>Get Started by typing your custom text here. <br></br> Check out all of the other plates available too!</Typography>
+            </Popover>
+
+            </div>
           </div>
         </div>
       <div className='row radio-row m-3 p-2'>

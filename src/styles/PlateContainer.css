@@ -46,8 +46,8 @@
 .download-img-button {
     transition-duration: 0.2s;
     font-weight: 900;
-    background-color: rgb(235, 235, 235);
-    border: solid 1px rgb(255, 255, 255);
+    background-color: rgb(245, 245, 245);
+    border: solid 1px rgb(229, 229, 229);
     border-radius: 20px
 }
 .download-img-button:hover {

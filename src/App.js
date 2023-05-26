@@ -9,6 +9,7 @@ function App() {
       <div><h1 className="navbar-logo">Canada Plates</h1></div>
       <div>
         <Link className="px-3 py-2 navbar-link">Repo</Link>
+        <Link className="px-3 py-2 navbar-link">More Projects</Link>
         <Link className="px-3 py-2 navbar-link">Privacy</Link>
         <Link className="px-3 py-2 navbar-link"><i class="fa-brands fa-twitter"></i></Link>
       </div>
