@@ -46,9 +46,9 @@ return (
         <p className={plateColor()}>{text}</p> 
         </div>
     </div>
-    <div className='download-row'>
+    <div className='download-row m-3'>
         <div className='d-flex justify-content-center align-items-end'>
-            <a className='download-img-button'>
+            <a className='download-img-button px-3 py-2'>
                 <i class="fa-solid fa-download px-2"></i>
                 Download Image
             </a>

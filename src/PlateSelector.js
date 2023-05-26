@@ -31,15 +31,15 @@ function PlateSelector() {
         </div>
       <div className='row radio-row m-3 p-2'>
         <p className='text-center'>Plate Selector:</p>
-      <div className='row d-flex'>
+      <div className='row'>
         {
           plateImageValue.map(plate => (
             <div className='col-4 col-md-6 col-lg-4 col-xl-4 p-1'>
-              <div className='row d-flex'>
-                <div className='col-1'>
+              <div className='row'>
+                <div className='col-1 d-flex justify-content-center'>
                   <input class='input-radio' type={'radio'} name='plate-select' value={`${plate.id}`} onClick={handlePlateChange}></input>
                 </div>
-                <div className='col-9'>
+                <div className='col-10 px-0'>
                   <img className='plate-icon img img-fluid' src={plate.plate}></img>
                 </div>
               </div>

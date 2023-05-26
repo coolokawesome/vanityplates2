@@ -17,13 +17,21 @@
     text-align: center;
     top: -34%;
     font-family: 'Driver';
-    font-size: 10em
+    font-size: 10em;
+    /* text-shadow: black 2px 1px 1px; */
 }
+
 .text-white {
-    color: white
+    background: -webkit-linear-gradient(#f2f2f2, #e6e6e6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
 }
+
 .text-blue {
-    color: blue
+    background: -webkit-linear-gradient(#455dfc, #230ec3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .text-red {
     color: red
@@ -37,9 +45,15 @@
 .download-img-button {
     transition-duration: 0.2s;
     font-weight: 900;
+    background-color: rgb(235, 235, 235);
+    border: solid 1px rgb(255, 255, 255);
+    border-radius: 20px
 }
 .download-img-button:hover {
     transform: translateY(2px);
     transition-duration: 0.2s;
     cursor: pointer;
+}
+.download-row {
+    
 }
