@@ -26,6 +26,10 @@ The second version of the Canada Plates application underwent a significant UI r
 <li>Bootstrap (grid + utils)</li>
 <li>HTML2Canvas</li>
 
+### Whats To Come?
+
+I'll be working on updating the mobile layouts soon, as horizontal scrolling can be an issue on some devices.
+
 ### Contact
 
 if you have any questions about this project, feel free to contact me at <a href="https://syrussamson.ca">syrussamson.ca</a>
