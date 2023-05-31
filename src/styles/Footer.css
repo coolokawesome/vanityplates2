@@ -1,5 +1,6 @@
 .footer-a {
     font-size: small;
     text-decoration: none;
-    color: black !important
+    color: black !important;
+    cursor: pointer;
 }
