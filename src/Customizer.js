@@ -8,7 +8,6 @@ function Customizer() {
         <div className='row'>
             <PlateContainer />
             <PlateSelector />
-            <Footer />
         </div>
     </div>
   )
