@@ -26,7 +26,7 @@ function App() {
   <div className="container"><div className="row mt-5">
     
   <h1 className="">What is Canada Plates?</h1>
-    <p>Welcome! This app allows you to create customized Canadian vanity plates for (almost) any province. Simply select your plate from one of the many options, enter your slogan, and the app will generate an image of the license plate for you. If you like your creation, hit the "Download Image" button below to save your design!</p>
+  <p>Welcome! This app allows you to create customized Canadian vanity plates for (almost) any province. Simply select your plate from one of the many options, enter your slogan, and the app will generate an image of the license plate for you. If you like your creation, hit the "Download Image" button below to save your design!</p>
     <p>The app currently supports all Canadian provinces and territories, excluding the North West Territories. </p>
     <p>While the license plate designs in the app resemble those used in each province, please note that they may not be exact replicas of the official plates. The app is designed for entertainment and personal use, and the generated plates should not be used for legal or official purposes.</p>
   </div>
